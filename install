@@ -103,8 +103,8 @@ do_install()
 	brew uninstall qt4 || true
 	brew uninstall qt4-no-webkit || true
 
-  brew install --force qt5 || true
-  brew link --force qt5 || true
+  brew install --force qt || true
+  brew link --force qt || true
 
   #brew remove pyqt5 || true
   # If installation failed with error:
@@ -126,7 +126,7 @@ do_install()
   # Note: the installation process may take long time,
   # which will not generate any output in 10 mins
   # leading travis build failure.
-  brew install pyqt5 --with-python
+  brew install pyqt --with-python
 
   # unlink gazebo8 collisions
   brew uninstall gazebo7 || true
